@@ -6,7 +6,7 @@ function App() {
   // Calculate dynamic anxiety box properties
 const pendingTasks = tasks.filter(task => !task.completed).length;
 const anxietyHeight = Math.min(50 + pendingTasks * 20, 250); // Base 50px, max 250px
-const anxietyColor = pendingTasks === 0 ? "blue-400" : "red";
+const anxietyColor = pendingTasks === 0 ? "blue" : "red";
 const anxietyLabel = pendingTasks === 0 ? "Peace 😌" : "Anxiety 😵";
 
 
